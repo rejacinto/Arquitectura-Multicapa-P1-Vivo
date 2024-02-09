@@ -18,8 +18,9 @@ import org.json.simple.JSONObject;
 
 
 @Repository
-public class CharacterRepository {
+public class CharacterRepository implements ICharacterRepository {
 
+    @Override
     public List<Character> getCharactersByName(String name) {
 
         List<Character> characters = new ArrayList<>();
